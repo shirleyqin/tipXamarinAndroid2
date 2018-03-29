@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textColor="#ffffff"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="#48d1cc"
+            android:text="Bill Amount"
+            android:textSize="19dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:textColor="#48d1cc"
+            android:id="@+id/inputBill"
+            android:textSize="19dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+     <TextView
+            android:textColor="#48d1cc"
+            android:text="Tax"
+            android:textSize="19dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    <EditText
+            android:textColor="#48d1cc"
+            android:id="@+id/inputTax"
+            android:text="0"
+            android:textSize="19dp"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="#48d1cc"
+            android:text="Tip Percent"
+            android:textSize="19dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:textColor="#48d1cc"
+            android:id="@+id/inputTipPercent"
+            android:text="15"
+            android:textSize="19dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+  
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+         <TextView
+            android:textColor="#48d1cc"
+            android:text="Split By"
+            android:textSize="19dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+       <EditText
+            android:textColor="#48d1cc"
+            android:layout_marginLeft="30dp"
+            android:text="1"
+            android:id="@+id/inputSplitBy"
+            android:textSize="19dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+            
+    <Button
+        android:id="@+id/calculateButton"
+        android:textSize="19dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="CALCULATE" />
+  
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:textColor="#ffffff"
+            android:text="Each Person Pay Tip"
+            android:textSize="19dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="#ffffff"
+            android:id="@+id/outputTip"
+            android:textSize="19dp"
+            android:layout_marginLeft="70dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+     
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp">
+        <TextView
+            android:textColor="#ffffff"
+            android:text="Each Person Pay Bill Amount"
+            android:textSize="19dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="#ffffff"
+            android:id="@+id/outputBillAmount"
+            android:textSize="19dp"
+            android:layout_marginLeft="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+            
+  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp">
+        <TextView
+            android:textColor="#ffffff"
+            android:text="Each Person Pay Total"
+            android:textSize="19dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+      
+   <TextView
+            android:textColor="#ffffff"
+            android:id="@+id/outputTotal"
+            android:textSize="19dp"
+            android:layout_marginLeft="55dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+  
+ 
+   
+   
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:textColor="#48d1cc"
+            android:text="Total Tip"
+            android:textSize="19dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="#48d1cc"
+            android:id="@+id/outputAllTip"
+            android:textSize="19dp"
+            android:layout_marginLeft="175dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+ 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp">
+        <TextView
+            android:textColor="#48d1cc"
+            android:text="Grand Total - No Tip"
+            android:textSize="19dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="#48d1cc"
+            android:id="@+id/outputGrandTotal"
+            android:textSize="19dp"
+            android:layout_marginLeft="80dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp">
+        <TextView
+            android:textColor="#48d1cc"
+            android:text="Grand Total - With Tip"
+            android:textSize="19dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="#48d1cc"
+            android:id="@+id/outputGrandTotalTip"
+            android:textSize="19dp"
+            android:layout_marginLeft="65dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
